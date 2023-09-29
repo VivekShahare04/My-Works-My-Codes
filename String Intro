@@ -1,0 +1,16 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        
+        Scanner sc=new Scanner(System.in);
+        String A=sc.next();
+        String B=sc.next();
+        System.out.println((A.length()+B.length()));
+        System.out.println((A.compareTo(B))>0?"Yes":"No");//verify whether number of letter in each string if A is greater than b it will print (NO)
+        System.out.println(Character.toUpperCase(A.charAt(0))+A.substring(1)+" "+Character.toUpperCase(B.charAt(0))+B.substring(1));//here,I have written or give command to two string to have first letter capital only and remaining be small
+    }
+}
+
