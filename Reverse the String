@@ -1,0 +1,25 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) throws IOException {
+        
+       BufferedReader sc = new BufferedReader(new InputStreamReader(System.in));
+        String A=sc.readLine();
+        String temp = A;
+        StringBuffer sb = new StringBuffer(A);
+        sb.reverse();
+        A = sb.toString();
+        if(temp.equalsIgnoreCase(A)){
+            System.out.println("Yes");
+        }
+        else{
+            System.out.println("No");
+        }
+        
+    }
+}
+
+
+
